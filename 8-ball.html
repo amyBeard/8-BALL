@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>8-BALL</title>
+        <link rel="stylesheet" href="./styles.css">
+        <script>
+          function validateForm() {
+              var gameName = document.getElementById("gameName").value.trim();
+              var player1Name = document.getElementById("player1Name").value.trim();
+              var player2Name = document.getElementById("player2Name").value.trim();
+  
+              if (gameName === '' || player1Name === '' || player2Name === '') {
+                  alert("Please fill in all fields.");
+                  return false; // Prevent form submission
+              }
+              return true; // Allow form submission
+          }
+
+    </script>
+  </head>
+  <body>
+    <form action="display.html" method="post" onsubmit="return validateForm()">
+      <div>
+        <h1> 8-Ball </h1>
+        <p>By Amy Beard</p>
+        <div id = "Inputs">
+          <label for="gameName">Game Name:</label>
+          <input type="text" id="gameName" name="gameName" size="20" />
+        </div>
+        <div id = "Inputs">
+          <label for="player1Name">Player1 Name:</label>
+          <input type="text" id="player1Name" name="player1Name" size="20" />
+        </div>
+        <div id = "Inputs">
+          <label for="player2Name">Player2 Name:</label>
+          <input type="text" id="player2Name" name="player2Name" size="20" />
+        </div>
+      <h3> <input type="submit" value="Play!" /> </h3>
+    </form>
+  </body>
+</html>

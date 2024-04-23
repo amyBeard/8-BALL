@@ -1,0 +1,38 @@
+*{
+    text-align: center;
+    font-family: monospace;
+}
+
+body{
+    background: #3C1E3C;
+    color: #e6e1db;
+}
+
+h1{
+    font-size: 8em;
+    color: #AA274F;
+    text-shadow: 2px 8px 2px #611f24;
+    margin-bottom: 0;
+}
+
+h3 > input{
+    background-color: #e3962d;
+    border-radius: 1em;
+    width: 250px;
+    height: 75px;
+    font-size: 3em;
+}
+
+#Inputs{
+    margin-top: 5px;
+    text-align: center;
+    align-items: block;
+}
+
+div{
+    margin-top: 200px;
+}
+
+label{
+    font-size: 1.5em;
+}
